@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(243, 87%, 12%);
+}
+.container{
+    padding: 3% 7%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex > div{
+    flex: 1;
+}
+nav .flex{
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-left: 2rem;
+}
+
+ul{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+}
+img{
+    max-width: 100%;
+}
+h1, h2, h5{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/**haeder**/
+header{
+    margin-bottom: 4rem;
+}
+form{
+    margin-top: 2rem;
+}
+input{
+    padding:1rem ;
+    width: 50%;
+    margin-right: 1rem;
+    border: 1px #b8b8b8 solid;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+button{
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem 3rem;
+    border: 1px hsl(224, 67%, 39%) solid;
+    background-color: hsl(224, 93%, 58%);
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/**1st section*/
+.stay-productive{
+    margin-top: 2rem;
+    background-color: hsl(240, 75%, 98%);
+    position: relative;
+}
+.stay-productive::before{
+    content: '';
+    position: absolute;
+    background-image: url(./images/bg-curve-desktop.svg);
+    top: -70px;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+h2{
+    margin-bottom: 1rem;
+}
+p{
+    margin-bottom: 1rem;
+}
+.stay-productive a{ 
+    
+    color: #3DA08F;
+}
+
+.card{
+    background-color: #ffffff;
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.164);
+    margin-top: 1rem;
+}
+.user{
+    align-items: center;
+    display: flex;
+}
+.user img{
+    margin-right: 1rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+
+.get-access{
+    padding: 4rem 0;
+    background-color:  hsl(238, 22%, 44%);
+    color: #ffffff;
+}
+.get-access input{
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.466);
+}
+.padding{
+    padding-right: 10rem;
+}
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: #ffffff;
+    padding: 2rem 0;
+}
+.footer-logo{
+    margin-bottom: 1rem;
+}
+footer .flex{
+    align-items: flex-start;
+}
+footer ul li{
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+}
+footer ul li a{
+    color: #ffffff;
+    
+}
+.icons ul li{
+    display: inline-block;
+    margin-right: 1rem;
+    border: 1px solid #ffffff;
+    padding: 3px 7px;
+    border-radius: 50%;
+}
+.icons ul .twitter:hover {
+    background: #48aef1;
+}
+.icons ul .facebook:hover {
+    background: rgb(0, 22, 221);
+}
+.icons ul .insta:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+
+}
+footer p{
+    text-align: center;
+
+}
+footer p a{
+    color: hsl(224, 93%, 58%);
+}
+
+@media screen and (max-width:920px){
+    h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:750px){
+    h1, h2{
+        font-size: 1.5rem;
+    }
+    .flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav .flex{
+        flex-direction: row;
+    }
+    nav ul li{
+        margin-left: .5rem;
+    }
+    .logo{
+        width: 5rem;
+    }
+    input{
+        margin-right: 0;
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .card{
+        width: 95%;
+        padding: 1rem .5rem;
+    }     
+    .user{
+        justify-content: center;
+    }
+    .padding{
+        padding-right: 0;
+    }
+    .get-access form{
+        width: 100%;
+    }
+    .get-access input{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .footer-logo{
+        text-align: left !important;
+    }
+    footer ul li{
+        text-align: left;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:400px){
+    
+    .stay-productive::before{
+        background-image: url(./images/bg-curve-mobile.svg);
+        top: -35px;
+    }
+}
